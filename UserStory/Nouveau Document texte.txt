@@ -1,0 +1,89 @@
+User Story 1 : S'inscrire
+En tant que nouvel utilisateur,
+Je veux pouvoir m'inscrire à l'application,
+Afin de créer un compte et accéder aux fonctionnalités de location de trottinettes.
+
+Critères d'acceptation :
+L'utilisateur doit pouvoir accéder à un formulaire d'inscription depuis la page d'accueil.
+
+Le formulaire doit demander les informations suivantes :
+
+Nom
+
+Prénom
+
+Adresse e-mail
+
+Mot de passe (avec confirmation)
+
+Numéro de téléphone (optionnel)
+
+Le mot de passe doit respecter des critères de sécurité (ex : 8 caractères minimum, au moins une majuscule, un chiffre, etc.).
+
+L'utilisateur doit recevoir un e-mail de confirmation pour valider son compte.
+
+Après validation, l'utilisateur est redirigé vers la page de connexion.
+
+Scénarios :
+Scénario 1 : Inscription réussie
+
+L'utilisateur remplit correctement le formulaire.
+
+Un message de succès s'affiche : "Votre compte a été créé avec succès. Veuillez vérifier votre e-mail pour confirmer votre inscription."
+
+Scénario 2 : E-mail déjà utilisé
+
+L'utilisateur saisit une adresse e-mail déjà enregistrée.
+
+Un message d'erreur s'affiche : "Cette adresse e-mail est déjà associée à un compte."
+
+Scénario 3 : Mot de passe non conforme
+
+L'utilisateur saisit un mot de passe qui ne respecte pas les critères de sécurité.
+
+Un message d'erreur s'affiche : "Le mot de passe doit contenir au moins 8 caractères, une majuscule et un chiffre."
+
+User Story 2 : Se connecter
+En tant que utilisateur inscrit,
+Je veux pouvoir me connecter à mon compte,
+Afin de accéder à mon profil et louer une trottinette.
+
+Critères d'acceptation :
+L'utilisateur doit pouvoir accéder à un formulaire de connexion depuis la page d'accueil.
+
+Le formulaire doit demander :
+
+Adresse e-mail
+
+Mot de passe
+
+L'utilisateur doit pouvoir réinitialiser son mot de passe via un lien "Mot de passe oublié".
+
+Après une connexion réussie, l'utilisateur est redirigé vers la page d'accueil ou son tableau de bord.
+
+Scénarios :
+Scénario 1 : Connexion réussie
+
+L'utilisateur saisit des identifiants valides.
+
+Un message de succès s'affiche : "Connexion réussie."
+
+L'utilisateur est redirigé vers son tableau de bord.
+
+Scénario 2 : Identifiants incorrects
+
+L'utilisateur saisit une adresse e-mail ou un mot de passe incorrect.
+
+Un message d'erreur s'affiche : "Adresse e-mail ou mot de passe incorrect."
+
+Scénario 3 : Compte non validé
+
+L'utilisateur tente de se connecter avec un compte non validé.
+
+Un message d'erreur s'affiche : "Veuillez valider votre compte en cliquant sur le lien reçu par e-mail."
+
+Scénario 4 : Mot de passe oublié
+
+L'utilisateur clique sur "Mot de passe oublié".
+
+Un e-mail est envoyé avec un lien pour réinitialiser le mot de passe.
